@@ -7,15 +7,27 @@
 
 // for (let i = 0; i < gallery.length; i++) {
 //     $(".option").append.attr("style", "Background-image:url(" + [i] + ");");
-    
-// }
-$("#sketchbookContainer").hide();
 
-$(".option").click(function(){
+// }
+// HIDE THEM DIVS
+$("#sketchbookContainer").hide();
+$("#whoareyouContainer").hide();
+
+
+// SKETCHBOOK DISPLAY
+$(".option").click(function () {
     $(".option").removeClass("active");
     $(this).addClass("active");
- });
+});
 
- $("#sketchbookDiv").on("click", function() {
-     $("#sketchbookContainer").show();
- })
+//  REVEAL CLICKS
+$("#sketchbookDiv").on("click", function () {
+    $("#sketchbookContainer").show();
+    //  $("#sketchbookContainer").hide();
+    $("#whoareyouContainer").hide();
+})
+$("#whoareyouDiv").on("click", function () {
+    $("#whoareyouContainer").show();
+    $("#sketchbookContainer").hide();
+    // $("#whoareyouContainer").hide();
+})
