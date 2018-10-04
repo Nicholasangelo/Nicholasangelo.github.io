@@ -1,103 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" type="reset/css" href="assets/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
     <title>Nicholas Angelo Batten</title>
 </head>
+
 <body>
-<div class="grid">
-    <h1 id="whoamiDiv">WHO AM I</h1>
-    <h1 id="whatiknowDiv">WHAT I KNOW</h1>
-    <h1 id="whoareyouDiv">WHO ARE YOU?</h1>
-    <h1 id="whatidoDiv">WHAT I DO</h1>
-    <h1 id="sketchbookDiv">SKETCHBOOK</h1>
-</div>
+    <div class="grid">
+        <h1 id="whoamiDiv">WHO AM I</h1>
+        <h1 id="whatiknowDiv">WHAT I KNOW</h1>
+        <h1 id="whoareyouDiv">WHO ARE YOU?</h1>
+        <h1 id="whatidoDiv">WHAT I DO</h1>
+        <h1 id="sketchbookDiv">SKETCHBOOK</h1>
+    </div>
 
 
+    <!-- ++START++ ABOUT ME CONTAINER AND CODE -->
+    <container class="options" id="whoamiContainer">
+        <div id="myImgDiv">
+            <img id="aboutPic" src="images/barb.png" , alt="Nick" , style="height:23em">
+        </div>
+        <div id="whoamiText">
+            <p>There is nothing to be said about myself that cannot be said through hipster ipsum.</p>
+            <p>Lorem ipsum dolor amet drinking vinegar live-edge blue bottle etsy normcore gluten-free. Neutra copper mug next
+                level skateboard pabst, ethical portland vexillologist tumeric. Small batch swag activated charcoal, farm-to-table
+                shoreditch chicharrones four loko direct trade green juice narwhal hoodie marfa cliche intelligentsia. Green
+                juice glossier ramps, chillwave pork belly kale chips salvia tilde. Banjo brooklyn +1 migas celiac typewriter
+                kitsch schlitz knausgaard mumblecore portland marfa kombucha activated charcoal XOXO. Cred subway tile vexillologist,
+                lyft typewriter freegan readymade prism swag humblebrag twee mlkshk raclette. Plaid disrupt migas asymmetrical,
+                ennui thundercats iPhone everyday carry succulents marfa keffiyeh readymade. Organic hell of semiotics chicharrones
+                XOXO farm-to-table chia, shabby chic copper mug pop-up fixie pitchfork microdosing iceland whatever. Man
+                bun sartorial brooklyn health goth. Tacos sartorial hammock master cleanse chartreuse yr single-origin coffee
+                brooklyn kickstarter marfa helvetica seitan. Hoodie live-edge iceland 3 wolf moon pok pok everyday carry
+                truffaut church-key hella.</p>
+        </div>
 
+    </container>
+    <!-- xx END xx ABOUT ME CONTAINER AND CODE -->
 
-<!-- ++START++ CONTACT CONTAINER AND CODE -->
-<container id="whoareyouContainer">
-<div class="contact">
-    <section>
-      <h2 class="aboutTitle">Contact</h2>
-      
-      <div class="container">
-          <!-- <form action="/action_page.php"> -->
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="first name?">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="last name?">
-          
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="whatcha thinkin' bout?" style="height:200px"></textarea>
-  
-            <input type="submit" value="Submit">
-          </form>
-      </div>
-    </section>
-  </div>
-</container>
-<!-- ++START++ SKETCHBOOK CONTAINER AND SKETCHBOOK CODE -->
-<container id="sketchbookContainer">
+    <!-- ++START++ WHAT I KNOW CONTAINER AND CODE -->
+    <container class="options" id="whatiknowContainer">
+        <div id="logos">
+            <img class="logoFloat" data-table="library" src="images/logos/bootstrap.png", alt="Bootstrap", style="height:5em">
+            <img class="logoFloat" data-table="language" src="images/logos/css.png", alt="Css", style="height:5em">
+            <img class="logoFloat" data-table="programs" src="images/logos/git.png", alt="Git", style="height:5em">
+            <img class="logoFloat" data-table="programs" src="images/logos/github.png", alt="Github", style="height:5em">
+            <img class="logoFloat" data-table="programs" src="images/logos/google.png", alt="Google", style="height:5em">
+            <img class="logoFloat" data-table="language" src="images/logos/html.png", alt="Html", style="height:5em">
+            <img class="logoFloat" data-table="language" src="images/logos/javascript.jpg", alt="Javascript", style="height:5em">
+            <img class="logoFloat" data-table="library" src="images/logos/jquery.png", alt="jQuery", style="height:5em">
+            <img class="logoFloat" data-table="library" src="images/logos/materialize.png", alt="Materialize", style="height:5em">
+            <img class="logoFloat" data-table="programs" src="images/logos/nodejs.png", alt="nodejs", style="height:5em">
+            <img class="logoFloat" data-table="library" src="images/logos/frame7.png", alt="Framework 7", style="height:5em">
+           
+        </div>
+        <div>
+            <table id="table">
+                <tr>
+                    <th>Languages</th>
+                    <th>Librarys</th>
+                    <th >Programs</th>
+                </tr>
+                <tr id="tableRows">
+                    <tr id="language"></tr>
+                    <tr id="library"></tr>
+                    <tr id="programs"></tr>
+            
+                </tr>
+            </table>
+        </div>
+    </container>
+    <!-- xx END xx WHAT I KNOW CONTAINER AND CODE -->
 
-    <div class="options">
-        <div class="option active" style="Background-image:url('images/starbucks.jpg');">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="info">
-                    <div class="main"></div>
-                    <div class="sub"></div>
+    <!-- ++START++ CONTACT CONTAINER AND CODE -->
+    <container class="options" id="whoareyouContainer">
+        <div class="contact">
+            <section>
+                <h2 class="aboutTitle">Contact</h2>
+
+                <div class="container">
+                    <!-- <form action="/action_page.php"> -->
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="first name?">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="last name?">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="whatcha thinkin' bout?" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </container>
+    <!-- xx END xx CONTACT CONTAINER AND CODE -->
+
+    <!-- ++START++ SKETCHBOOK CONTAINER AND SKETCHBOOK CODE -->
+    <container id="sketchbookContainer">
+
+        <div class="options">
+            <div class="option active" style="Background-image:url('images/starbucks.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="option" style="Background-image:url('images/cowangie.jpg');">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="info">
-                    <div class="main"></div>
-                    <div class="sub"></div>
+            <div class="option" style="Background-image:url('images/cowangie.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="option" style="Background-image:url('images/greek.png');">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="info">
-                    <div class="main"></div>
-                    <div class="sub"></div>
+            <div class="option" style="Background-image:url('images/greek.png');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="option" style="Background-image:url('images/shangkini.jpg');">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="info">
-                    <div class="main"></div>
-                    <div class="sub"></div>
+            <div class="option" style="Background-image:url('images/shangkini.jpg');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="option" style="Background-image:url('images/zither.png');">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="info">
-                    <div class="main"></div>
-                    <div class="sub"></div>
+            <div class="option" style="Background-image:url('images/zither.png');">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-</container>
-<!-- ++END++ SKETCHBOOK CONTAINER AND SKETCHBOOK CODE -->
-
+    </container>
+    <!-- xx END xx SKETCHBOOK CONTAINER AND SKETCHBOOK CODE -->
 
     <script type="text/javascript" src="assets/JS/script.js"></script>
+
 </body>
+
 </html>

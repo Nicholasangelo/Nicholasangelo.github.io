@@ -1,33 +1,81 @@
-// var gallery = {
-//     barb:"images/barb.png",
-//     boots:"imagesboots.png",
-//     cowangie:"images/cowangie.jpg",
-//     dinofiiInfo:"images/dinofiiInfo.png"
-// }
-
-// for (let i = 0; i < gallery.length; i++) {
-//     $(".option").append.attr("style", "Background-image:url(" + [i] + ");");
-
-// }
 // HIDE THEM DIVS
-$("#sketchbookContainer").hide();
+$("#whoamiContainer").hide();
+$("#whatiknowContainer").hide();
+$("#whatidoContainer").hide();
 $("#whoareyouContainer").hide();
+$("#sketchbookContainer").hide();
 
-
-// SKETCHBOOK DISPLAY
+// SKETCHBOOK GALLERY DISPLAY
 $(".option").click(function () {
     $(".option").removeClass("active");
     $(this).addClass("active");
 });
 
 //  REVEAL CLICKS
-$("#sketchbookDiv").on("click", function () {
-    $("#sketchbookContainer").show();
-    //  $("#sketchbookContainer").hide();
+// who am i
+$("#whoamiDiv").on("click", function () {
+    $("#whoamiContainer").show();
+    $("#whatiknowContainer").hide();
     $("#whoareyouContainer").hide();
-})
-$("#whoareyouDiv").on("click", function () {
-    $("#whoareyouContainer").show();
+    $("#whatidoContainer").hide();
     $("#sketchbookContainer").hide();
-    // $("#whoareyouContainer").hide();
 })
+// what i know
+$("#whatiknowDiv").on("click", function () {
+    $("#whoamiContainer").hide();
+    $("#whatiknowContainer").show();
+    $("#whoareyouContainer").hide();
+    $("#whatidoContainer").hide();
+    $("#sketchbookContainer").hide();
+})
+// who are you
+$("#whoareyouDiv").on("click", function () {
+    $("#whoamiContainer").hide();
+    $("#whatiknowContainer").hide();
+    $("#whoareyouContainer").show();
+    $("#whatidoContainer").hide();
+    $("#sketchbookContainer").hide();
+})
+// what i do
+$("#whatidoDiv").on("click", function () {
+    $("#whoamiContainer").hide();
+    $("#whatiknowContainer").hide();
+    $("#whoareyouContainer").hide();
+    $("#whatidoContainer").show();
+    $("#sketchbookContainer").hide();
+})
+// sketchbook
+$("#sketchbookDiv").on("click", function () {
+    $("#whoamiContainer").hide();
+    $("#whatiknowContainer").hide();
+    $("#whoareyouContainer").hide();
+    $("#whatidoContainer").hide();
+    $("#sketchbookContainer").show();
+})
+
+$(".logoFloat").on("click", function () {
+    $(this).css("display", "none");
+    var data = $(this).attr("data-table");
+    var alt = $(this).attr("alt");
+    var newLog = $("<td>").text(alt);
+
+    if (data === "language") {
+        $("#language").append(newLog);
+    } else if (data === "library") {
+        $("#library").append(newLog);
+    } else if (data === "programs") {
+        $("#programs").append(newLog);
+    }
+
+    // $("#table").append(logoLog);
+
+
+    // logoLog = $("<td>").text(alt);
+    //     $("#table").append(logoLog);
+
+})
+
+
+
+
+
