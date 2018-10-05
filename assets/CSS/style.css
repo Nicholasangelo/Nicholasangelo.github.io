@@ -154,8 +154,8 @@ body {
 #linkedin {
   background-image: url('../../images/icons/linkedin.png');
   position: relative;
-  left: 222em;
-  bottom: 6em;
+  left: 24em;
+  bottom: 3em;
 }
 #instagram {
   background-image: url('../../images/icons/instagram.png');
@@ -167,7 +167,7 @@ body {
 #gmail {
   background-image: url('../../images/icons/gmail.png');
   position: relative;
-  bottom: 17em;
+  bottom: 39em;
   left: 18em; 
 }
 #github {
