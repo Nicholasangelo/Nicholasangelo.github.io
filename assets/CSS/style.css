@@ -142,13 +142,58 @@ body {
           75%  {left:12%; top:10%;}
           100%  {left:4%; top:71%;}
       }
+#whoareyouContainer {
+  background-color: #fbf8f5;
+  border-radius: 60%;
+  box-shadow: 3px 3px 10px inset grey;
+}
+#buttons {
+  width: min-content;
   
-      @media screen and (max-width: 718px) {
-    body .options {
-      min-width: 520px;
-    }
-    }
-  @media screen and (max-width: 638px) {
+}
+#linkedin {
+  background-image: url('../../images/icons/linkedin.png');
+  position: relative;
+  left: 222em;
+  bottom: 6em;
+}
+#instagram {
+  background-image: url('../../images/icons/instagram.png');
+  position: relative;
+  bottom: 15em;
+  left: 5em; 
+  box-shadow: 2px 2px 6px;
+}
+#gmail {
+  background-image: url('../../images/icons/gmail.png');
+  position: relative;
+  bottom: 17em;
+  left: 18em; 
+}
+#github {
+  background-image: url('../../images/icons/github.png');
+  position: relative;
+  left: 9em;
+  top: 2em;  
+}
+.socialIcon {
+  border-radius: 50%;
+  height: 13em;
+  width: 13em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.socialIcon:hover {
+  cursor: pointer;
+  background-size: auto;
+}
+@media screen and (max-width: 718px) {
+  body .options {
+  min-width: 520px;
+}
+}
+@media screen and (max-width: 638px) {
     body .options {
       min-width: 440px;
     }
