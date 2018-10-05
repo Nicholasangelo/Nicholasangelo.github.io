@@ -97,17 +97,57 @@ body {
   #whoamiText::first-letter {
     font-size: 200%;
   }
-  whatiknowContainer {
-    max-width: 400px;
+  #whatiknowContainer {
+    width: min-content;
   }
-  /* @media screen and (max-width: 718px) {
+  #logos {
+    z-index: 1;
+  }
+  .floatOne {
+    position: relative;
+    animation-name: floatOne;
+    animation-duration: 20s; 
+}
+    @keyframes floatOne {
+        0%   {left:20%; top:20%;}
+        25%  {left:1%;  top:30%;}
+        50%  {left:16%; top:7%;}
+        75%  {left:1%; top:10%;}
+        100%  {left:11%; top:90%;}
+  }
+  .floatTwo {
+    position: relative;
+    animation-name: floatTwo;
+    animation-duration: 20s; 
+}
+    @keyframes floatTwo {
+        0%   {left:30%; top:30%;}
+        25%  {left:1%;  top:30%;}
+        50%  {left:26%; top:15%;}
+        75%  {left:2%; top:10%;}
+        100%  {left:12%; top:4%;}
+    }
+    .floatThree {
+      position: relative;
+      animation-name: floatThree;
+      animation-duration: 20s; 
+  }
+  #table {
+    position: relative;
+  }
+      @keyframes floatThree {
+          0%   {left:1%; top:88%;}
+          25%  {left:19%;  top:30%;}
+          50%  {left:1%; top:15%;}
+          75%  {left:12%; top:10%;}
+          100%  {left:4%; top:71%;}
+      }
+  
+      @media screen and (max-width: 718px) {
     body .options {
       min-width: 520px;
     }
-    body .options .option:nth-child(5) {
-      display: none;
     }
-  }
   @media screen and (max-width: 638px) {
     body .options {
       min-width: 440px;
@@ -128,7 +168,5 @@ body {
     body .options {
       min-width: 280px;
     }
-    body .options .option:nth-child(2) {
-      display: none;
-    }
-  } */
+    
+  }

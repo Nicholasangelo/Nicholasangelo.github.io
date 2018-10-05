@@ -1,5 +1,5 @@
 // HIDE THEM DIVS
-$("#whoamiContainer").hide();
+$("#whoamiContainer").show();
 $("#whatiknowContainer").hide();
 $("#whatidoContainer").hide();
 $("#whoareyouContainer").hide();
