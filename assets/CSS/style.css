@@ -83,6 +83,7 @@ body {
     height: 120px;
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
   }
+  /* ++START++ ABOUT ME SECTION */
   #whoamiContainer {
     width: min-content;
     overflow: scroll;
@@ -97,22 +98,17 @@ body {
   #whoamiText::first-letter {
     font-size: 200%;
   }
+  /* xxENDxx ABOUT ME SECTION */
+
+  /* ++START++ WHAT I KNOW SECTION */
   #whatiknowContainer {
     width: min-content;
+    background-image: url(../../images/gameGrass.jpg);
     cursor: url(../../images/smash.png), auto;
   }
   #logos {
     z-index: 1;
   }
-/* .logoFloat:hover {
-  cursor: url(../../images/smash2.png), auto;
-} */
-/* #mousedown {
-  width: min-content;
-}
-#mousedown:hover {
-  cursor: url(../../images/smash2.png), auto;
-} */
   .floatOne {
     position: relative;
     animation-name: floatOne;
@@ -142,9 +138,7 @@ body {
       animation-name: floatThree;
       animation-duration: 20s; 
   }
-  #table {
-    position: relative;
-  }
+ 
       @keyframes floatThree {
           0%   {left:1%; top:88%;}
           25%  {left:19%;  top:30%;}
@@ -152,6 +146,18 @@ body {
           75%  {left:12%; top:10%;}
           100%  {left:4%; top:71%;}
       }
+#table {
+  position: sticky;
+  width: 100%;
+  table-layout: fixed;
+  background: white;
+  border: double 2px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .7em;
+}
+      /* xxENDxx WHAT I KNOW SECTION */
+
+      /* ++START++ CONTACT SECTION */
 #whoareyouContainer {
   background-color: #fbf8f5;
   border-radius: 60%;
