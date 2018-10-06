@@ -53,29 +53,41 @@ $("#sketchbookDiv").on("click", function () {
     $("#sketchbookContainer").show();
 })
 
+
+
+var smash = $("#whatiknowContainer");
+smash.mousedown(function(){
+    smash.css('cursor', 'url(images/smash2.png), auto');
+})
+smash.mouseup(function(){
+    smash.css('cursor', 'url(images/smash.png), auto');
+})
+
 $(".logoFloat").on("click", function () {
     $(this).css("display", "none");
+    
     var data = $(this).attr("data-table");
     var alt = $(this).attr("alt");
     var newLog = $("<td>").text(alt);
 
     if (data === "language") {
         $("#language").append(newLog);
+        // smash.css('cursor', 'url(images/smash2.png), auto');
     } else if (data === "library") {
         $("#library").append(newLog);
+        // smash.css('cursor', 'url(../../images/smash2.png)');
     } else if (data === "programs") {
         $("#programs").append(newLog);
+        // smash.css('cursor', 'url(../../images/smash2.png)');
     }
-
     // $("#table").append(logoLog);
-
+    
+  
 
     // logoLog = $("<td>").text(alt);
     //     $("#table").append(logoLog);
 
+
 })
-
-
-
 
 

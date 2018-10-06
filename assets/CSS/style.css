@@ -99,10 +99,20 @@ body {
   }
   #whatiknowContainer {
     width: min-content;
+    cursor: url(../../images/smash.png), auto;
   }
   #logos {
     z-index: 1;
   }
+/* .logoFloat:hover {
+  cursor: url(../../images/smash2.png), auto;
+} */
+/* #mousedown {
+  width: min-content;
+}
+#mousedown:hover {
+  cursor: url(../../images/smash2.png), auto;
+} */
   .floatOne {
     position: relative;
     animation-name: floatOne;
@@ -187,6 +197,9 @@ body {
 .socialIcon:hover {
   cursor: pointer;
   background-size: auto;
+}
+.nav:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 718px) {
   body .options {
