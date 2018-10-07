@@ -81,7 +81,7 @@ body {
   }
   .nav:hover {
     cursor: pointer;
-    text-decoration: wavy;
+    
   }
   /* ++START++ ABOUT ME SECTION */
   #whoamiContainer {
@@ -180,9 +180,14 @@ body {
 /* xxENDxx SOCIAL ICON SECTION */
 
 /* ++ MEDIA ++ */
-@media screen and (max-width: 718px) {
+@media screen and (max-width: 900px) {
   body .options {
   min-width: 520px;
+}
+}
+@media screen and (max-width: 718px) {
+  body .options {
+  min-width: 440px;
 }
 }
 @media screen and (max-width: 638px) {
@@ -223,3 +228,15 @@ body {
       background-image: none;
     }
   }
+  #whoamiDiv {
+    font-family: 'Federo', sans-serif;
+  }
+  #whatiknowDiv {
+    font-family: 'Federo', sans-serif;
+  }
+  #whatidoDiv {
+    font-family: 'Federo', sans-serif;
+  }
+#sketchbookDiv {
+  font-family: 'Federo', sans-serif;
+}
