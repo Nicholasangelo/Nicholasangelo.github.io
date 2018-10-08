@@ -9,6 +9,7 @@ body {
     background-image: url('../../images/nickyb.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-y: -29px;
   }
   body .credit {
     position: absolute;
@@ -170,7 +171,7 @@ body {
 #icons {
   position: relative;
   left: 72%;
-  bottom: 0em;
+  bottom: 8em;
 }
 .clickIcon:hover {
   border-radius: 50%;

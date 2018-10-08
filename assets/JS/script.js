@@ -80,14 +80,12 @@ $(".logoFloat").on("click", function () {
         $("#programs").append(newLog);
         // smash.css('cursor', 'url(../../images/smash2.png)');
     }
-    // $("#table").append(logoLog);
-    
-  
 
-    // logoLog = $("<td>").text(alt);
-    //     $("#table").append(logoLog);
-
-
+// ++START++ THINGS IVE DONE
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      });
+// xxENDxx THINGS IVE DONW
 })
 
 
