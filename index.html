@@ -114,82 +114,181 @@
                 </container>
                 <!-- MODAL ONE -->
                 <div id="modal1" class="modal">
-                    <div class="modal-content container">
-                            <div class="carouself">
-                                <a class="carousel-item" href="#one!">
-                                    <img class="carImg" src="images/projects/hangBirdLogo.png">
-                                </a>
-                                <a class="carousel-item" href="#two!">
-                                    <img class="carImg" src="images/projects/hangbirdSnip.png">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img class="carImg" src="images/hangbird.jpg">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img class="carImg" src="images/hangbird.jpg">
-                                </a>
-                            </div>
-                                <div class="modal-footer">
-                                        <a href="https://nicholasangelo.github.io/Hang-Bird" class="modal-close waves-effect waves-green btn-flat" target="_blank">Play the Game</a>
-                                        <a href="https://github.com/Nicholasangelo/Hang-Bird" class="modal-close waves-effect waves-green btn-flat" target="_blank">Read the Code</a>
-                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                                </div>
-                            
-                        
-                    </div>
-                </div>
-                <!-- MODAL TWO -->
-                <div id="modal2" class="modal">
                     <div class="modal-content">
-                        <container class="modCar">
-                            <div class="carousel">
-                                <a class="carousel-item" href="#one!">
-                                    <img src="images/projects/hangBirdLogo.png">
-                                </a>
-                                <a class="carousel-item" href="#two!">
-                                    <img src="images/projects/hangbirdSnip.png">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img src="images/hangbird.jpg">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img src="images/hangbird.jpg">
-                                </a>
-                            </div>
-                        
-                    </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        <div class="row">
+
+                            <a class="col s4 carousel-item" href="#one!">
+                                <img class="modalBird" src="images/projects/hangBirdLogo.png" style="width:100%">
+                            </a>
+                            <a class="col s4 carousel-item" href="#two!">
+                                <img class="modalBird" src="images/hangbird.jpg" style="width:100%">
+                            </a>
+                            <a class="col s4 carousel-item" href="#three!">
+                                <img class="modalBird" src="images/hangbird.jpg" style="width:100%">
+                            </a>
                         </div>
-                    </container>
+                        <div class="row">
+                            <a class="col s12 carousel-item" href="#three!">
+                                <img src="images/projects/hangbirdSnip.png" style="width:100%">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="nicholasangelo.github.io/Hang-Bird" class="modal-close waves-effect waves-green btn-flat" target="_blank">Save a Bird</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/Nicholasangelo/Hang-Bird" class="modal-close waves-effect waves-green btn-flat" target="_blank">Read a Code</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+    </container>
+    </div>
+    <!-- MODAL TWO -->
+    <div id="modal2" class="modal">
+        <div id="dinoModal" class="row modal-content">
+            <container class="col s12">
+                <div>
+                    <img id="opening" src="">
                 </div>
 
-                <!-- MODAL THREE -->
-                <div id="modal3" class="modal">
-                    <div class="modal-content">
-                        <container class="modCar">
-                            <div class="carousel">
-                                <a class="carousel-item" href="#one!">
-                                    <img src="images/projects/hangBirdLogo.png">
-                                </a>
-                                <a class="carousel-item" href="#two!">
-                                    <img src="images/projects/hangbirdSnip.png">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img src="images/hangbird.jpg">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img src="images/hangbird.jpg">
-                                </a>
-                            </div>
-                        
-                    </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                        </div>
-                    </container>
+            </container>
+
+            <section id="presentation">
+
+                <div class="prezBox" id="features">
+                    <h3>Features</h3>
+                    <p>Whether you're a digital nomad, traveller, or road tripper, Dinofii helps you discover new destinations.
+                        Define your search area as either Earth, a country, or region of a country, then choose the type
+                        of place you're looking for from the Select Feature menu. When you click Search, Dinofii will randomly
+                        return a matching feature in the search area you defined, as well as the closest city to that feature.
+                        Every piece of information returned is linked to more information. The feature name, country name,
+                        and feature type are all linked to search for more information about themselves. The feature's latitude
+                        and longitude coordinates will take you to a map of that location. The closest city information will
+                        take you to a map with directions from the city to the feature. The wifi icon will display the number
+                        of hotspots found in the area if that information is available, and the globe icon next to the wifi
+                        symbol will take you to a map of all known wifi hotspots in the area.</p>
+
                 </div>
-            
+
+                <div class="prezBox" id="design">
+                    <h3>Design</h3>
+                    <p>Using Html, Bootstrap, and CSS we have designed a minimal and user friendly interface.</p>
+                    <p>We have created a simple search bar with prepopulated features that you can search or browse.</p>
+                    <p>Results are dynamicly displayed on Bootstrap Cards and stack as you continue to search.</p>
+                    <p>Displayed results come with links to map your destination, search for areas with high internet traffic
+                        and gather more informtaion.</p>
+                </div>
+
+                <div class="prezBox" id="apiFaqs">
+                    <h3>APIs @ Play</h3>
+                    <h5>GEONAMES</h2>
+                        <p>Finds global locations (points of interest, not cities) based on a single feature code.</p>
+                        <h5>EZCMD</h2>
+                            <p>Finds postal codes and nearby cities based on latitude and longitude coordinates.</p>
+                            <h5>WIGLY</h2>
+                                <p>Finds the number of WiFi Hotspots in a given postal code, including detailed mapping.</p>
+                </div>
+
+                <div class="prezBox" id="futureDev">
+                    <h3>The Future of DiNofii</h3>
+                    <p>A one stop Web Application for planning and pursuing a life of adventure.</p>
+                    <p>Embassy,Passport, and Travel information including Visa requirments.</p>
+                    <p>Expat meetups, housing, and short stay residencies.</p>
+                    <p>Travel booking, translators,Currency Calculator- the sky is the limit</p>
+                </div>
+            </section>
+
+
+            <script>
+
+                var prezDisplay = $("#presentation");
+                prezDisplay.hide();
+
+                setTimeout(twoSeconds, 1000 * 1);
+                setTimeout(fourSeconds, 1000 * 3);
+                setTimeout(sixSeconds, 1000 * 4);
+                setTimeout(eightSeconds, 1000 * 5);
+                setTimeout(tenSeconds, 1000 * 6);
+                setTimeout(twelveSeconds, 1000 * 7);
+                setTimeout(fourteenSeconds, 1000 * 8);
+                setTimeout(sixteenSeconds, 1000 * 9);
+                setTimeout(eighteenSeconds, 1000 * 10);
+
+
+                function twoSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino1.png");
+                }
+                function fourSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino2");
+
+                }
+                function sixSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino3.png");
+
+                }
+                function eightSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino4.png");
+
+                }
+                function tenSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino5.png");
+                }
+                function twelveSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino6.png");
+
+                }
+                function fourteenSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino7.png");
+
+                }
+                function sixteenSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino8.png");
+
+                }
+                function eighteenSeconds() {
+                    $("#opening").attr('src', "images/dinofii/Dino9.png");
+                    prezDisplay.show();
+                    $("#return").on("click", function () {
+                        window.location.href = 'index.html'
+                    })
+                }
+
+
+            </script>
+
+        </div>
+        <div class="modal-footer">
+            <a href="https://landrumTrev.github.io/dinofii" class="modal-close waves-effect waves-green btn-flat" target="_blank">Search DiNofii</a>
+        </div>
+        <div class="modal-footer">
+            <a href="https://github.com/LandrumTrev/dinofii" class="modal-close waves-effect waves-green btn-flat" target="_blank">Read DiNofii</a>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+        </container>
+    </div>
+
+    <!-- MODAL THREE  -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+
+
+        </div>
+        <div class="modal-footer">
+            <a href="nicholasangelo.github.io/Potty-Train" class="modal-close waves-effect waves-green btn-flat" target="_blank">Potty Train</a>
+        </div>
+        <div class="modal-footer">
+            <a href="https://github.com/Nicholasangelo/Potty-Train" class="modal-close waves-effect waves-green btn-flat" target="_blank">Potty Code</a>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+        </container>
+    </div>
+
     <!-- xx END xx THINGS IVE DONE CONTAINER AND CODE -->
 
     <!-- ++START++ SKETCHBOOK CONTAINER AND SKETCHBOOK CODE -->
