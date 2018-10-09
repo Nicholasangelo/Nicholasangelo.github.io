@@ -56,16 +56,16 @@ $("#sketchbookDiv").on("click", function () {
 
 
 var smash = $("#whatiknowContainer");
-smash.mousedown(function(){
+smash.mousedown(function () {
     smash.css('cursor', 'url(images/smash2.png), auto');
 })
-smash.mouseup(function(){
+smash.mouseup(function () {
     smash.css('cursor', 'url(images/smash.png), auto');
 })
 
 $(".logoFloat").on("click", function () {
     $(this).css("display", "none");
-    
+
     var data = $(this).attr("data-table");
     var alt = $(this).attr("alt");
     var newLog = $("<td>").text(alt);
@@ -81,11 +81,14 @@ $(".logoFloat").on("click", function () {
         // smash.css('cursor', 'url(../../images/smash2.png)');
     }
 
-// ++START++ THINGS IVE DONE
-    $('.carousel.carousel-slider').carousel({
-        fullWidth: true
-      });
-// xxENDxx THINGS IVE DONW
 })
 
+// ++START++ THINGS IVE DONE
 
+$(document).ready(function () {
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+});
+$(document).ready(function(){
+    $('.carousel').carousel({shift: 0});
+  });

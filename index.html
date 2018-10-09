@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Federo|K2D|Mirza|Philosopher|Press+Start+2P|Righteous" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link rel="stylesheet" href- "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
     <link rel="stylesheet" type="reset/css" href="assets/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicholas Angelo Batten</title>
 </head>
 
@@ -34,21 +34,18 @@
                 <!-- ++START++ ABOUT ME CONTAINER AND CODE -->
                 <container class="options" id="whoamiContainer">
                     <div class="row">
-                        <div class="col s6" id="myImgDiv">
-                            <img id="aboutPic" src="images/barb.png" , alt="Nick" , style="height:23em">
+                        <div class="col s12 m6 l6" id="myImgDiv">
+                            <img id="aboutPic" src="images/selfieNick.JPG" , alt="Nick" , style="height:23em">
                         </div>
                         <div id="whoamiText">
-                            <p class="col s3 infoCol">Nicholas Angelo Batten was born in New York, and raised in Virginia. He earned a degree in Art
+                            <p class="col s6 m3 l3 infoCol" style="padding-right:0">Nicholas Angelo Batten was born in New York, and raised in Virginia. He earned a degree in Art
                                 History from Virginia Commonwealth University with an emphasis in Aesthetics and Film Studies
                                 and a focus in Italian Language and Culture. Nicholas is an experienced Actor, Writer, Director
-                                and Songwriter. He is a Childrens Book Author. and now, a full stack Web Developer.
-                                <p class="col s3">Cred subway tile vexillologist, lyft typewriter freegan readymade prism swag humblebrag twee
-                                    mlkshk raclette. Plaid disrupt migas asymmetrical, ennui thundercats iPhone everyday
-                                    carry succulents marfa keffiyeh readymade. Organic hell of semiotics chicharrones XOXO
-                                    farm-to-table chia, shabby chic copper mug pop-up fixie pitchfork microdosing iceland
-                                    whatever. Man bun sartorial brooklyn health goth. Tacos sartorial hammock master cleanse
-                                    chartreuse yr single-origin coffee brooklyn kickstarter marfa helvetica seitan. Hoodie
-                                    live-edge iceland 3 wolf moon pok pok everyday carry truffaut church-key hella.</p>
+                                and Songwriter.
+                                <p class="col s6 m3 l3" style="padding-left:0">As a user-focused Full Stack Developer with a background in narrative Arts he believes that
+                                    the user and aesthetic experience are tantamount, and that the present and future of
+                                    storytelling is programming, web development, and user driven media. Nicholas is a curator
+                                    of the unique experience, focused on the individual to inspire to build a better cultural awareness, and community.</p>
                         </div>
                     </div>
                 </container>
@@ -73,13 +70,15 @@
                         <table id="table">
                             <tr>
                                 <th style="text-align:right">SMASH</th>
-                                <th style="text-align:center">TO</th>
-                                <th style="text-align:left">LOG DATA</th>
+                                <th style="text-align:right">TO</th>
+                                <th style="text-align:left">LOG</th>
+                                <th style="text-align:left">DATA</th>
                             </tr>
                             <tr id="tableRows">
                                 <tr id="language"></tr>
                                 <tr id="library"></tr>
                                 <tr id="programs"></tr>
+                                <tr id="others"></tr>
 
                             </tr>
                         </table>
@@ -91,51 +90,100 @@
                 <!-- ++ START ++ THINGS IVE DONE CONTAINER AND CODE -->
                 <container class="options" id="whatidoContainer">
                     <div class="row">
-                        <div class="col s6 carousel carousel-slider">
-                            <a class="carousel-item" href="#one!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#two!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#three!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#four!">
-                                <img src="">
-                            </a>
+                        <div class="col s4">
+                            <img id="poster1" src="images/projects/hangbirdImg.png" style="width:100%">
+                            <p>NAME: Hang-Bird CLASS: My first game
+                            </p>
+                            <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal1">info</a>
                         </div>
-                        <div class="col s6 carousel carousel-slider">
-                            <a class="carousel-item" href="#one!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#two!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#three!">
-                                <img src="">
-                            </a>
-                            <a class="carousel-item" href="#four!">
-                                <img src="">
-                            </a>
+                        <div class="col s4">
+                            <img id="poster2" src="images/dinofiiPage.jpg" style="width:100%">
+                            <p>NAME: Potty Train CLASS: My first application
+                            </p>
+                            <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal2">info</a>
+                        </div>
+                        <div class="col s4">
+                            <img id="poster3" src="images/projects/pottytrainImg.png" style="width:100%">
+                            <p>NAME: Potty Train CLASS: My first project
+                            </p>
+                            <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal3">info</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#one!">
-                                    <img src="">
-                                </a>
-                                <a class="carousel-item" href="#two!">
-                                    <img src="">
-                                </a>
-                                <a class="carousel-item" href="#three!">
-                                    <img src="">
-                                </a>
-                                <a class="carousel-item" href="#four!">
-                                    <img src="">
-                                </a>
-                            </div>
+<!-- MODAL ONE -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <container class="modCar">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!">
+                                        <img src="images/projects/hangBirdLogo.png">
+                                    </a>
+                                    <a class="carousel-item" href="#two!">
+                                        <img src="images/projects/hangbirdSnip.png">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                        <img src="images/hangbird.jpg">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                            <img src="images/hangbird.jpg">
+                                        </a>
+                                </div>
+
+                            </container>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                </container>
+                <!-- MODAL TWO -->
+                <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <container class="modCar">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!">
+                                        <img src="images/projects/hangBirdLogo.png">
+                                    </a>
+                                    <a class="carousel-item" href="#two!">
+                                        <img src="images/projects/hangbirdSnip.png">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                        <img src="images/hangbird.jpg">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                            <img src="images/hangbird.jpg">
+                                        </a>
+                                </div>
+
+                            </container>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                </container>
+                <!-- MODAL THREE -->
+                <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <container class="modCar">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!">
+                                        <img src="images/projects/hangBirdLogo.png">
+                                    </a>
+                                    <a class="carousel-item" href="#two!">
+                                        <img src="images/projects/hangbirdSnip.png">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                        <img src="images/hangbird.jpg">
+                                    </a>
+                                    <a class="carousel-item" href="#three!">
+                                            <img src="images/hangbird.jpg">
+                                        </a>
+                                </div>
+
+                            </container>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                         </div>
                     </div>
                 </container>
@@ -196,22 +244,21 @@
             </div>
         </div>
 
-                <footer class="row" style="margin-top:12%">
+        <footer class="row" style="margin-top:12%">
 
-                    <div class="col s12" id="icons">
-                        <a href="https://github.com/Nicholasangelo" target="_blank">
-                            <img class="clickIcon" src="images/icons/github.png" style="height:100px" "width:100px", alt="Github">
-                            <a href="https://www.instagram.com/ashcan_wit/" target="_blank">
-                                <img class="clickIcon" src="images/icons/instagram.png" style="height:100px" "width:100px", alt="Instagram">
-                                <a href="https://www.linkedin.com/in/nicholas-angelo-batten-07ba41a/" target="_blank">
-                                    <img class="clickIcon" src="images/icons/linkedin.png" style="height:100px" "width:100px", alt="Linkedin">
-                    </div>
+            <div class="col s12" id="icons">
+                <a href="https://github.com/Nicholasangelo" target="_blank">
+                    <img class="clickIcon" src="images/icons/github.png" style="height:100px" "width:100px", alt="Github">
+                    <a href="https://www.instagram.com/ashcan_wit/" target="_blank">
+                        <img class="clickIcon" src="images/icons/instagram.png" style="height:100px" "width:100px", alt="Instagram">
+                        <a href="https://www.linkedin.com/in/nicholas-angelo-batten-07ba41a/" target="_blank">
+                            <img class="clickIcon" src="images/icons/linkedin.png" style="height:100px" "width:100px", alt="Linkedin">
+            </div>
 
-                </footer>
+        </footer>
     </container>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
     <script type="text/javascript" src="assets/JS/script.js"></script>
-
 </body>
 
 </html>

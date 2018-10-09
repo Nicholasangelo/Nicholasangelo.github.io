@@ -91,13 +91,14 @@ body {
     border: double 9px;
   }
   #aboutPic {
-    border: solid 3px white;
-    padding: 43px 28px 0px 39px;
+    padding: 35px 35px 0px 26px;
     height: 23em;
+    width: 20em;
     margin-bottom: 48px;
   }
   #myImgDiv {
     border-right: solid 1px;
+    /* background-color: pink; */
   }
   #whoamiText {
     font-family: 'Balthazar', serif;
@@ -115,6 +116,7 @@ body {
     width: min-content;
     background-image: url(../../images/gameGrass.jpg);
     cursor: url(../../images/smash.png), auto;
+    border: inset 6px pink;
   }
   #logos {
     z-index: 1;
@@ -166,7 +168,13 @@ body {
   font-size: .7em;
 }
       /* xxENDxx WHAT I KNOW SECTION */
-
+  /* /* ++START++ WHAT I DO  */
+#whatidoContainer {
+width: min-content;
+    overflow: scroll;
+    text-align: center;
+    padding-top:10px;
+  }
       /* ++START++ SOCIAL ICON SECTION */
 #icons {
   position: relative;
@@ -175,7 +183,7 @@ body {
 }
 .clickIcon:hover {
   border-radius: 50%;
-  box-shadow: 2px 2px 6px inset;
+  box-shadow: 2px 2px 6px inset pink;
   cursor: pointer;
 }
 /* xxENDxx SOCIAL ICON SECTION */
@@ -213,8 +221,11 @@ body {
       display: inline-grid;
     }
     body {
-      padding-top: 15em;
-      background-image: none;
+      padding-top: 30em;
+      /* background-image: none; */
+    }
+    #whoamiText {
+      z-index: 1;
     }
   }
   @media screen and (max-width: 478px) {
@@ -225,8 +236,8 @@ body {
       display: inline-grid;
     }
     body {
-      padding-top: 13em;
-      background-image: none;
+      padding-top: 30em;
+      /* background-image: none; */
     }
   }
   #whoamiDiv {
@@ -240,4 +251,26 @@ body {
   }
 #sketchbookDiv {
   font-family: 'Federo', sans-serif;
+}
+.carousel {
+  width: auto;
+  height: 800px;
+}
+
+.carousel-item {
+  text-align: center;
+  width: 480px;
+}
+#poster1 {
+  box-shadow: 12px 10px 30px;
+}
+#poster2 {
+  box-shadow: 1px 11px 30px;
+}
+#poster3 {
+  box-shadow: -12px 12px 30px;
+}
+.modButtOne {
+  border-radius: 50%;
+  background-color: pink;
 }
