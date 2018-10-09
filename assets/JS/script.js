@@ -90,5 +90,5 @@ $(document).ready(function () {
     $('.modal-trigger').leanModal();
 });
 $(document).ready(function(){
-    $('.carousel').carousel({shift: 0});
+    $('.carousel').carousel();
   });

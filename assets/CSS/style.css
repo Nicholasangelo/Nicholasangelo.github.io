@@ -17,6 +17,7 @@ body {
     left: 20px;
     color: #000;
   }
+  /* too much sketchbook stuff, fun though */
   body .options {
     display: flex;
     flex-direction: row;
@@ -80,6 +81,7 @@ body {
     height: 120px;
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
   }
+  /* ++MAIN NAV TITLES */
   .nav:hover {
     cursor: pointer;
     
@@ -168,6 +170,7 @@ body {
   font-size: .7em;
 }
       /* xxENDxx WHAT I KNOW SECTION */
+
   /* /* ++START++ WHAT I DO  */
 #whatidoContainer {
 width: min-content;
@@ -175,6 +178,31 @@ width: min-content;
     text-align: center;
     padding-top:10px;
   }
+  .carousel {
+    width: auto;
+  }
+  .carousel-item {
+    text-align: center;
+  }
+  .carImg {
+    height: 200px;
+    border-radius: 50%;
+  }
+  #poster1 {
+    box-shadow: 12px 10px 30px;
+  }
+  #poster2 {
+    box-shadow: 1px 11px 30px;
+  }
+  #poster3 {
+    box-shadow: -12px 12px 30px;
+  }
+  .modButtOne {
+    border-radius: 50%;
+    background-color: pink;
+  }
+  /* xxENDxx WHAT I DO SECTION AND CODE */
+
       /* ++START++ SOCIAL ICON SECTION */
 #icons {
   position: relative;
@@ -251,26 +279,4 @@ width: min-content;
   }
 #sketchbookDiv {
   font-family: 'Federo', sans-serif;
-}
-.carousel {
-  width: auto;
-  height: 800px;
-}
-
-.carousel-item {
-  text-align: center;
-  width: 480px;
-}
-#poster1 {
-  box-shadow: 12px 10px 30px;
-}
-#poster2 {
-  box-shadow: 1px 11px 30px;
-}
-#poster3 {
-  box-shadow: -12px 12px 30px;
-}
-.modButtOne {
-  border-radius: 50%;
-  background-color: pink;
 }
