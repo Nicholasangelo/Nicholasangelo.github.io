@@ -130,6 +130,16 @@ body {
     width: 80%;
     position: relative;
   }
+  #infoSubmit {
+    border-radius: 70%;
+    top: 8em;
+    right: 13em;
+    background-color: white;
+    color: black;
+  }
+  #infoSubmit:hover{
+    background-color: pink;
+  }
   /* xxENDxx ABOUT ME SECTION */
 
   /* ++START++ WHAT I KNOW SECTION */
