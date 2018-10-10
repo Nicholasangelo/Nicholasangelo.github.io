@@ -245,6 +245,9 @@ width: min-content;
   body .options {
   min-width: 440px;
 }
+body {
+  padding-top: 33%;
+}
 }
 @media screen and (max-width: 638px) {
     body .options {
@@ -256,6 +259,11 @@ width: min-content;
     body {
       padding-top: 12em;
     }
+    #icons {
+      position: absolute;
+    left: 26%;
+    top: 52em;
+    }
   }
   @media screen and (max-width: 558px) {
     body .options {
@@ -265,10 +273,12 @@ width: min-content;
       display: none;
     }
     #icons {
-      display: inline-grid;
+      position: absolute;
+      left: -3%;
+      top: 62em;
     }
     body {
-      padding-top: 30em;
+      padding-top: 20em;
       /* background-image: none; */
     }
     #whoamiText {
@@ -280,10 +290,12 @@ width: min-content;
       min-width: 280px;
     }
     #icons {
-      display: inline-grid;
+      position: absolute;
+      left: -3%;
+      top: 54em;
     }
     body {
-      padding-top: 30em;
+      padding-top: 11em;
       /* background-image: none; */
     }
   }
