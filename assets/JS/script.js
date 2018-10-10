@@ -92,3 +92,41 @@ $(document).ready(function () {
 $(document).ready(function(){
     $('.carousel').carousel();
   });
+
+// ++WHO AM I++ INPUT DATA FROM INPUT FEILD SHARED TO FIREBASE
+  var config = {
+    apiKey: "AIzaSyDEXavw1owVThSnpVcXYfVvigHKlSxoyUI",
+    authDomain: "io-contact.firebaseapp.com",
+    databaseURL: "https://io-contact.firebaseio.com",
+    projectId: "io-contact",
+    storageBucket: "",
+    messagingSenderId: "928268206661"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+$("#infoSubmit").on("click", function (event) {
+    event.preventDefault();
+
+    let name = $("#name").val().trim();
+    let company = $("#company").val().trim();
+    let email = $("#email").val().trim();
+    let details = $("#textarea1").val().trim();
+    
+    var newInput = {
+        Name: name,
+        Company: company,
+        Email: email,
+        Message: details
+    };
+
+    console.log(newInput);
+
+    database.ref().push(newInput);
+
+    $("#name").val("");
+    $("#email").val("");
+    $("#company").val("");
+    $("#textarea1").val("");
+})

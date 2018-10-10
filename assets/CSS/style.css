@@ -100,15 +100,35 @@ body {
     width: 20em;
     margin-bottom: 48px;
   }
-  #myImgDiv {
+  /* #myImgDiv {
     border-right: solid 1px;
     /* background-color: pink; */
-  }
+  /* } */ */
   .infoCol{
     overflow: scroll;
+    border-left: solid 1px;
   }
   .infoCol::first-letter {
     font-size: 200%;
+  }
+  #infoCard {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    left: 2.3em;
+  }
+  .infoHeader {
+    border-top: solid 2px;
+    border-bottom: dotted 2px;
+    position: relative;
+    bottom: 3em;
+    text-align: center;
+  }
+  #aboutForm {
+  left: 4em;
+    width: 80%;
+    position: relative;
   }
   /* xxENDxx ABOUT ME SECTION */
 

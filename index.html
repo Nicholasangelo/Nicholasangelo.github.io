@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
     <link rel="stylesheet" type="reset/css" href="assets/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +38,10 @@
                     <div class="row">
                         <div class="col s12 m6 l6" id="myImgDiv">
                             <img id="aboutPic" src="images/selfieNick.jpg" , alt="Nick" , style="height:23em">
-                            <p>Nicholas Angelo Batten<br>Full Stack Dev & Designer</p>
-                
+                            <p id="infoCard">Nicholas Angelo Batten
+                                <br>*Full Stack Dev & Designer
+                                <br>NicholasAngeloBatten@gmail.com</p>
+
                         </div>
                         <div id="whoamiText">
                             <p class="col s6 m3 l3 infoCol" style="padding-right:0">Nicholas Angelo Batten was born in New York, and raised in Virginia. He earned a degree in Art
@@ -52,12 +55,36 @@
                                     awareness, and community.</p>
                         </div>
                     </div>
-                
+
                     <div class="row">
-                        <div class="col s12 m12 l12">
-                            Would you like to build an experience together?
+                        <div class="infoHeader col s12 m12 l12" style="border-top:solid 1px">
+                            Would you like to build something together?
                         </div>
-                        <div class="col s6"></div>
+                        <div class="row">
+                            <form id="aboutForm" class="col s12" style="width:80%">
+                                <div class="input-field col s6">
+                                    <input placeholder="What should I call you?" id="name" type="text" class="validate">
+                                    <label for="name">Name</label>
+                                    <div class="input-field">
+                                        <input placeholder="Who do you work for?" id="company" type="text" class="validate">
+                                        <label for="company">Company</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input placeholder="email@email.email" id="email" type="text" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12 m6 l6">
+                                    <textarea placeholder="What are we making?" id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Message</label>
+                                </div>
+
+                                <button id="infoSubmit" class="btn waves-effect waves-light" type="submit" name="action" style="border-radius:70%;top: 8em;right: 13em;">Submit
+                                </button>
+
+                            </form>
+                        </div>
                     </div>
                 </container>
                 <!-- xx END xx ABOUT ME CONTAINER AND CODE -->
