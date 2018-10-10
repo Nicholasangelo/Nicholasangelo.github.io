@@ -91,6 +91,8 @@ body {
     width: min-content;
     overflow: scroll;
     border: double 9px;
+    display: inline-block;
+    font-family: 'Balthazar', serif;
   }
   #aboutPic {
     padding: 35px 35px 0px 26px;
@@ -101,9 +103,6 @@ body {
   #myImgDiv {
     border-right: solid 1px;
     /* background-color: pink; */
-  }
-  #whoamiText {
-    font-family: 'Balthazar', serif;
   }
   .infoCol{
     overflow: scroll;
@@ -210,6 +209,7 @@ width: min-content;
   padding-top:0;
   position: relative;
   bottom: 7em;
+  text-align: center;
   }
   .modalBird {
     box-shadow: 2px 2px 4px pink;

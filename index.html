@@ -33,22 +33,31 @@
             <div class="col s12 m4 l4">
 
                 <!-- ++START++ ABOUT ME CONTAINER AND CODE -->
-                <container class="options" id="whoamiContainer">
+                <container class="options container" id="whoamiContainer">
                     <div class="row">
                         <div class="col s12 m6 l6" id="myImgDiv">
                             <img id="aboutPic" src="images/selfieNick.jpg" , alt="Nick" , style="height:23em">
+                            <p>Nicholas Angelo Batten<br>Full Stack Dev & Designer</p>
+                
                         </div>
                         <div id="whoamiText">
                             <p class="col s6 m3 l3 infoCol" style="padding-right:0">Nicholas Angelo Batten was born in New York, and raised in Virginia. He earned a degree in Art
                                 History from Virginia Commonwealth University with an emphasis in Aesthetics and Film Studies
                                 and a focus in Italian Language and Culture. Nicholas is an experienced Actor, Writer, Director
-                                and Songwriter.
+                                and Songwriter, transitioning into UX Design and Architecture.
                                 <p class="col s6 m3 l3" style="padding-left:0">As a user-focused Full Stack Developer with a background in narrative Arts he believes that
                                     the user and aesthetic experience are tantamount, and that the present and future of
                                     storytelling is programming, web development, and user driven media. Nicholas is a curator
                                     of the unique experience, focused on the individual to inspire to build a better cultural
                                     awareness, and community.</p>
                         </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            Would you like to build an experience together?
+                        </div>
+                        <div class="col s6"></div>
                     </div>
                 </container>
                 <!-- xx END xx ABOUT ME CONTAINER AND CODE -->
@@ -94,26 +103,29 @@
                     <div class="row">
                         <div class="col s4">
                             <img id="poster1" src="images/projects/hangbirdImg.png" style="width:100%">
-                            <p>Hang-Bird <br> My very first game.
+                            <p>Hang-Bird
+                                <br> My very first game.
                             </p>
                             <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal1">info</a>
                         </div>
                         <div class="col s4">
                             <img id="poster2" src="images/dinofiiPage.jpg" style="width:100%">
-                            <p>DiNofii <br> Travel Planner for the Digital Nomad.
+                            <p>DiNofii
+                                <br> Travel Planner for the Digital Nomad.
                             </p>
                             <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal2">info</a>
                         </div>
                         <div class="col s4">
                             <img id="poster3" src="images/projects/pottytrainImg.png" style="width:100%">
-                            <p>Potty Train <br> Scheduler for parents and pet owners.
+                            <p>Potty Train
+                                <br> Scheduler for parents and pet owners.
                             </p>
                             <a class="waves-effect waves-light btn modal-trigger modButtOne" href="#modal3">info</a>
                         </div>
                     </div>
                 </container>
                 <!-- MODAL ONE -->
-                <div id="modal1" class="modal">
+                <div id="modal1" class="modal" style="width:70%">
                     <div class="modal-content">
                         <div class="row">
 
@@ -146,11 +158,11 @@
     </container>
     </div>
     <!-- MODAL TWO -->
-    <div id="modal2" class="modal">
+    <div id="modal2" class="modal" style="width:70%">
         <div id="dinoModal" class="row modal-content">
             <container class="col s12">
                 <div>
-                    <img id="opening" src="">
+                    <img id="opening" src="" style="width:63%">
                 </div>
 
             </container>
@@ -206,7 +218,7 @@
                 var prezDisplay = $("#presentation");
                 prezDisplay.hide();
 
-                setTimeout(twoSeconds, 1000 * 1);
+                setTimeout(twoSeconds, 1000 * 2);
                 setTimeout(fourSeconds, 1000 * 3);
                 setTimeout(sixSeconds, 1000 * 4);
                 setTimeout(eightSeconds, 1000 * 5);
@@ -221,7 +233,7 @@
                     $("#opening").attr('src', "images/dinofii/Dino1.png");
                 }
                 function fourSeconds() {
-                    $("#opening").attr('src', "images/dinofii/Dino2");
+                    $("#opening").attr('src', "images/dinofii/Dino2.png");
 
                 }
                 function sixSeconds() {
@@ -272,7 +284,7 @@
     </div>
 
     <!-- MODAL THREE  -->
-    <div id="modal3" class="modal">
+    <div id="modal3" class="modal" style="width:70%">
         <div class="modal-content">
 
 
