@@ -249,6 +249,22 @@ width: min-content;
   #modal3 {
     background-image: url('../../images/pTrainBg.png');
   }
+  /* POTTY TRAIN STORY */
+  .trainStory {
+  display: inline-block;
+  }
+  #pottyTrain {
+    width: 60%;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 2.3em;
+  background-color: ghostwhite;
+  box-shadow: 7px 12px 11px darkgrey;
+  }
+  #pin {
+    width: 6em;
+    position: absolute;
+    top: -1em;
+  }
   /* xxENDxx WHAT I DO SECTION AND CODE */
 
       /* ++START++ SOCIAL ICON SECTION */

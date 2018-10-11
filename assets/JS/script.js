@@ -14,6 +14,8 @@ $(".option").click(function () {
 //  REVEAL CLICKS
 // who am i
 $("#whoamiDiv").on("click", function () {
+    $(".nav").css("text-shadow", "none");
+    $("#whoamiDiv").css("text-shadow", "2px 2px pink")
     $("#whoamiContainer").show();
     $("#whatiknowContainer").hide();
     $("#whoareyouContainer").hide();
@@ -22,30 +24,28 @@ $("#whoamiDiv").on("click", function () {
 })
 // what i know
 $("#whatiknowDiv").on("click", function () {
+    $(".nav").css("text-shadow", "none");
+    $("#whatiknowDiv").css("text-shadow", "2px 2px pink")
     $("#whoamiContainer").hide();
     $("#whatiknowContainer").show();
     $("#whoareyouContainer").hide();
     $("#whatidoContainer").hide();
     $("#sketchbookContainer").hide();
 })
-// who are you
-$("#whoareyouDiv").on("click", function () {
-    $("#whoamiContainer").hide();
-    $("#whatiknowContainer").hide();
-    $("#whoareyouContainer").show();
-    $("#whatidoContainer").hide();
-    $("#sketchbookContainer").hide();
-})
 // what i do
 $("#whatidoDiv").on("click", function () {
+    $(".nav").css("text-shadow", "none");
     $("#whoamiContainer").hide();
     $("#whatiknowContainer").hide();
     $("#whoareyouContainer").hide();
     $("#whatidoContainer").show();
     $("#sketchbookContainer").hide();
+    $("#whatidoDiv").css("text-shadow", "2px 2px pink")
 })
 // sketchbook
 $("#sketchbookDiv").on("click", function () {
+    $(".nav").css("text-shadow", "none");
+    $("#sketchbookDiv").css("text-shadow", "2px 2px pink")
     $("#whoamiContainer").hide();
     $("#whatiknowContainer").hide();
     $("#whoareyouContainer").hide();
