@@ -130,3 +130,4 @@ $("#infoSubmit").on("click", function (event) {
     $("#company").val("");
     $("#textarea1").val("");
 })
+// xxENDxx FIREBASE WHO AM I ABOUT ME WHATEVER

@@ -11,14 +11,14 @@ body {
     background-repeat: no-repeat;
     background-position-y: -29px;
   }
-  body .credit {
+  .credit {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: #000;
   }
-  /* too much sketchbook stuff, fun though */
-  body .options {
+  /* too much sketchbook stuff, fun though, learning something */
+  .options {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -28,7 +28,7 @@ body {
     width: calc(100% - 100px);
     height: 400px;
   }
-  body .options .option {
+  .options .option {
     position: relative;
     overflow: hidden;
     min-width: 60px;
@@ -100,10 +100,6 @@ body {
     width: 20em;
     margin-bottom: 48px;
   }
-  /* #myImgDiv {
-    border-right: solid 1px;
-    /* background-color: pink; */
-  /* } */ */
   .infoCol{
     overflow: scroll;
     border-left: solid 1px;
@@ -122,7 +118,7 @@ body {
     border-top: solid 2px;
     border-bottom: dotted 2px;
     position: relative;
-    bottom: 3em;
+    bottom: 1em;
     text-align: center;
   }
   #aboutForm {
@@ -132,13 +128,16 @@ body {
   }
   #infoSubmit {
     border-radius: 70%;
-    top: 8em;
+    top: 11em;
     right: 13em;
     background-color: white;
     color: black;
   }
   #infoSubmit:hover{
     background-color: pink;
+  }
+  .character-counter {
+    display: none;
   }
   /* xxENDxx ABOUT ME SECTION */
 
@@ -294,6 +293,9 @@ body {
     left: 26%;
     top: 52em;
     }
+    #aboutForm {
+      width: 100%;
+    }
   }
   @media screen and (max-width: 558px) {
     body .options {
@@ -309,12 +311,21 @@ body {
     }
     body {
       padding-top: 20em;
-      /* background-image: none; */
+      background-position-x: 14em;
+    background-position-y: -1em;
     }
     #whoamiText {
       z-index: 1;
     }
+    #infoSubmit {
+      top: 23em;
+    right: 5em;
+    }
+    #aboutForm {
+      width: 125%;
+    }
   }
+
   @media screen and (max-width: 478px) {
     body .options {
       min-width: 280px;
@@ -327,6 +338,9 @@ body {
     body {
       padding-top: 11em;
       /* background-image: none; */
+    }
+    #aboutForm {
+      width: 125%;
     }
   }
   #whoamiDiv {
