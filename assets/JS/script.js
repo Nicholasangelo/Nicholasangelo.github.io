@@ -150,3 +150,13 @@ $("#bgFOUR").on("click", function() {
     $("body").css("background-image", 'url(images/nickyb.png)');
     $("body").css("background-color", "#ffffff");
 });
+
+let audio = new Audio("musak/Baby Spine Breaker.m4a");
+$("#musak").on("click", function() {
+    audio.loop = true;
+    audio.play();
+});
+$("#musakOff").on("click", function() {
+    audio.loop = false;
+    audio.pause();
+});

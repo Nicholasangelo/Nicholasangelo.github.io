@@ -296,6 +296,11 @@ width: min-content;
     font-family: 'Dawning of a New Day', cursive;
     color: #000;
 }
+.musakButton {
+  display: block;
+  position: fixed;
+  left: 42%;
+}
 /* xxENDxx SOCIAL ICON SECTION */
 
 /* ++ MEDIA ++ */
@@ -314,6 +319,10 @@ width: min-content;
 }
 body {
   padding-top: 33%;
+}
+#custom{
+  bottom: -4em;
+    right: 12em;
 }
 }
 @media screen and (max-width: 638px) {
