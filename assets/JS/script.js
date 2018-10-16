@@ -4,6 +4,8 @@ $("#whatiknowContainer").hide();
 $("#whatidoContainer").hide();
 $("#whoareyouContainer").hide();
 $("#sketchbookContainer").hide();
+// highlight selected
+$("#whoamiDiv").css("text-shadow", "2px 2px pink")
 
 // SKETCHBOOK GALLERY DISPLAY
 $(".option").click(function () {
@@ -54,7 +56,7 @@ $("#sketchbookDiv").on("click", function () {
 })
 
 
-
+// ++START++ WHAT I KNOW STUFF
 var smash = $("#whatiknowContainer");
 smash.mousedown(function () {
     smash.css('cursor', 'url(images/smash2.png), auto');
@@ -87,7 +89,9 @@ $(".logoFloat").on("click", function () {
 
 $(document).ready(function () {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
+    $('.modal-trigger').leanModal({
+        dismissible: false,
+    });
 });
 
 
