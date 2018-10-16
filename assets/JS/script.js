@@ -133,3 +133,20 @@ $("#infoSubmit").on("click", function (event) {
     $("#textarea1").val("");
 })
 // xxENDxx FIREBASE WHO AM I ABOUT ME WHATEVER
+
+$("#bgONE").on("click", function() {
+    $("body").css("background-image", 'url(images/backgrounds/Paper.Sketches.19.png)');
+    $("body").css("background-color", "#fb2498");
+});
+$("#bgTWO").on("click", function() {
+    $("body").css("background-image", 'url(images/backgrounds/Paper.Sketches.20.png)');
+    $("body").css("background-color", "#1c21d6");
+});
+$("#bgTHREE").on("click", function() {
+    $("body").css("background-image", 'url(images/backgrounds/Paper.Sketches.22.png)');
+    $("body").css("background-color", "#fb2498");
+});
+$("#bgFOUR").on("click", function() {
+    $("body").css("background-image", 'url(images/nickyb.png)');
+    $("body").css("background-color", "#ffffff");
+});

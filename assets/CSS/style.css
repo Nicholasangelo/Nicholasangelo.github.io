@@ -289,12 +289,23 @@ width: min-content;
   box-shadow: 2px 2px 6px inset pink;
   cursor: pointer;
 }
+#custom {
+  bottom: 2em;
+    position: relative;
+    display: inline-block;
+    font-family: 'Dawning of a New Day', cursive;
+    color: #000;
+}
 /* xxENDxx SOCIAL ICON SECTION */
 
 /* ++ MEDIA ++ */
 @media screen and (max-width: 900px) {
   body .options {
   min-width: 520px;
+}
+#custom{
+  bottom: -4em;
+    right: 12em;
 }
 }
 @media screen and (max-width: 718px) {
@@ -319,6 +330,10 @@ body {
       position: absolute;
     left: 26%;
     top: 52em;
+    }
+    #custom {
+      bottom: -4em;
+    right: 12em;
     }
     #aboutForm {
       width: 100%;
@@ -368,6 +383,10 @@ body {
     }
     #aboutForm {
       width: 125%;
+    }
+    #custom {
+      bottom: -4em;
+    right: 12em;
     }
   }
   #whoamiDiv {
