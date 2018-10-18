@@ -299,7 +299,11 @@ width: min-content;
 .musakButton {
   display: block;
   position: fixed;
-  left: 42%;
+  left: 41%;
+  box-shadow: 2px 2px 2px;
+}
+#modal4 {
+  background: linear-gradient(to left, #775fd9, #fa19b8 50%, #eee 75%, #fff 75%);
 }
 /* xxENDxx SOCIAL ICON SECTION */
 

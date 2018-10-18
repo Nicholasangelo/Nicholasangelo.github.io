@@ -140,7 +140,7 @@ $("#bgONE").on("click", function() {
 });
 $("#bgTWO").on("click", function() {
     $("body").css("background-image", 'url(images/backgrounds/Paper.Sketches.20.png)');
-    $("body").css("background-color", "#1c21d6");
+    $("body").css("background-color", "#97f7ee");
 });
 $("#bgTHREE").on("click", function() {
     $("body").css("background-image", 'url(images/backgrounds/Paper.Sketches.22.png)');
