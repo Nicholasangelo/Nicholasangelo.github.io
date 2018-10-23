@@ -121,6 +121,13 @@ body {
     bottom: 1em;
     text-align: center;
   }
+  #poserCard {
+    left: 12%;
+    bottom: 6em;
+    position: relative;
+    font-family: 'Balthazar', serif;
+    color: white;
+  }
   #aboutForm {
   left: 4em;
     width: 80%;
