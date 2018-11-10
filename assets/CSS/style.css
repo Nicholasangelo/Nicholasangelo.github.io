@@ -93,6 +93,7 @@ body {
     border: double 9px;
     display: inline-block;
     font-family: 'Balthazar', serif;
+    text-align: justify;
   }
   #aboutPic {
     padding: 35px 35px 0px 26px;
