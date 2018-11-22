@@ -3,7 +3,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    overflow: hidden;
     height: 100vh;
     font-family: "Roboto", sans-serif;
     background-image: url('../../images/nickyb.png');
@@ -94,6 +94,9 @@ body {
     display: inline-block;
     font-family: 'Balthazar', serif;
     text-align: justify;
+  }
+  #whoamiContainer:hover {
+    cursor: s-resize;
   }
   #aboutPic {
     padding: 35px 35px 0px 26px;
@@ -304,11 +307,17 @@ width: min-content;
     font-family: 'Dawning of a New Day', cursive;
     color: #000;
 }
-.musakButton {
+#musakButtonOn {
   display: block;
   position: fixed;
   left: 41%;
   box-shadow: 2px 2px 2px;
+}
+#musakButtonOff {
+  display: block;
+  position: fixed;
+  left: 41%;
+  box-shadow: -2px 2px 2px;
 }
 #modal4 {
   background: linear-gradient(to left, #775fd9, #fa19b8 50%, #eee 75%, #fff 75%);
@@ -316,25 +325,32 @@ width: min-content;
 /* xxENDxx SOCIAL ICON SECTION */
 
 /* ++ MEDIA ++ */
+@media screen and (max-width: 1120px) {
+  #icons {
+  left: 56%;
+}
+}
 @media screen and (max-width: 900px) {
+  .nav {
+    font-size: 2.17em;
+  }
+}
+@media screen and (max-width: 780px) {
   body .options {
-  min-width: 520px;
-}
-#custom{
-  bottom: -4em;
-    right: 12em;
-}
-}
-@media screen and (max-width: 718px) {
-  body .options {
-  min-width: 440px;
+  min-width: 550px;
 }
 body {
-  padding-top: 33%;
+  padding-top: 6%;
+  overflow: scroll;
 }
 #custom{
   bottom: -4em;
     right: 12em;
+}
+}
+@media screen and (max-width: 700px) {
+  body .options {
+  min-width: 500px;
 }
 }
 @media screen and (max-width: 638px) {
@@ -345,7 +361,8 @@ body {
       display: none;
     }
     body {
-      padding-top: 12em;
+      padding-top: 0em;
+      overflow: scroll;
     }
     #icons {
       position: absolute;
@@ -358,6 +375,9 @@ body {
     }
     #aboutForm {
       width: 100%;
+    }
+    #myImgDiv {
+      text-align: center;
     }
   }
   @media screen and (max-width: 558px) {
@@ -373,9 +393,10 @@ body {
       top: 62em;
     }
     body {
-      padding-top: 20em;
+      padding-top: 0em;
       background-position-x: 14em;
     background-position-y: -1em;
+    overflow: scroll;
     }
     #whoamiText {
       z-index: 1;
@@ -399,8 +420,8 @@ body {
       top: 54em;
     }
     body {
-      padding-top: 11em;
-      /* background-image: none; */
+      padding-left: 2em;
+      overflow: scroll;
     }
     #aboutForm {
       width: 125%;
