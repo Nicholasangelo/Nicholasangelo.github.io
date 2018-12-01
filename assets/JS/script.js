@@ -152,11 +152,11 @@ $("#bgFOUR").on("click", function() {
 });
 
 let audio = new Audio("musak/Baby Spine Breaker.m4a");
-$("#musak").on("click", function() {
+$("#musakButtonOn").on("click", function() {
     audio.loop = true;
     audio.play();
 });
-$("#musakOff").on("click", function() {
+$("#musakButtonOff").on("click", function() {
     audio.loop = false;
     audio.pause();
 });
