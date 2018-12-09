@@ -132,6 +132,26 @@ body {
     bottom: 1em;
     text-align: center;
   }
+  .blah {
+   animation: blah 2s infinite;
+   animation-direction: alternate;
+
+  }
+  @keyframes blah {
+    0% {font-size: 2em;}
+    50% {font-size: 4em;}
+    100% {font-size: 5em;}
+  }
+  .blah2{
+animation: blahblah 2s infinite;
+animation-direction: alternate;
+  }
+  @keyframes blahblah {
+    0% {font-size: 6em;}
+    50% {font-size: 4em;}
+    100% {font-size: 2em;}
+  }
+  
   #poserCard {
     left: 12%;
     bottom: 6em;

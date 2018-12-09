@@ -1,3 +1,4 @@
+AOS.init();
 // HIDE THEM DIVS
 $("#whoamiContainer").show();
 $("#whatiknowContainer").hide();
@@ -55,7 +56,6 @@ $("#sketchbookDiv").on("click", function () {
     $("#sketchbookContainer").show();
 })
 
-
 // ++START++ WHAT I KNOW STUFF
 var smash = $("#whatiknowContainer");
 smash.mousedown(function () {
@@ -90,10 +90,12 @@ $(".logoFloat").on("click", function () {
 // ++START++ THINGS IVE DONE
 
 $(document).ready(function () {
+    AOS.init();
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal({
         dismissible: false,
     });
+    
 });
 
 
