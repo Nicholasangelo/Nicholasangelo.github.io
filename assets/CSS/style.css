@@ -98,18 +98,25 @@ body {
   #whoamiContainer:hover {
     cursor: s-resize;
   }
+  #myImgDiv {
+    /* text-align: center; */
+    display: flex;
+  }
   #aboutPic {
-    padding: 35px 35px 0px 26px;
-    height: 23em;
-    width: 20em;
-    margin-bottom: 48px;
+    padding: 20px 35px 0px 26px;
+    height: 20em;
+    width: 18.5em;
+    margin-bottom: .6em;
   }
   .infoCol{
     overflow: scroll;
-    border-left: solid 1px;
+    text-align: justify;
+    margin-right: 25px;
+    margin-left: 25px;
+    /* border-left: solid 1px; */
   }
   .infoCol::first-letter {
-    font-size: 200%;
+    font-size: 260%;
   }
   #infoCard {
     display: inline-block;
@@ -213,9 +220,40 @@ body {
   /* /* ++START++ WHAT I DO  */
 #whatidoContainer {
 width: min-content;
-    overflow: scroll;
+    overflow-x: scroll;
     text-align: center;
-    padding-top:10px;
+    padding: 51px 32px;
+  }
+  #whatidoContainer:hover {
+    cursor: ew-resize;
+  }
+  .poster {
+width: 12em;
+/* position: relative; */
+  }
+  #takenotePoster {
+    float: left;
+  }
+  #dinofiiPoster {
+    position: relative;
+    left: 13em;
+    bottom: 22.3em;
+  }
+  #trainPoster {
+    position: relative;
+    position: relative;
+    left: 26em;
+    bottom: 44.6em;
+  }
+  #hangbirdPoster {
+    position: relative;
+    left: 39em;
+    bottom: 66.9em;
+  }
+  #anotherPoster {
+    position: relative;
+    left: 52em;
+    bottom: 89.1em;
   }
   .carousel {
     width: auto;
@@ -228,10 +266,10 @@ width: min-content;
     border-radius: 50%;
   }
   #poster1 {
-    box-shadow: 12px 10px 30px;
+    box-shadow: -12px 10px 30px;
   }
   #poster2 {
-    box-shadow: 1px 11px 30px;
+    box-shadow: -12px 11px 30px;
   }
   #poster3 {
     box-shadow: -12px 12px 30px;
@@ -239,6 +277,7 @@ width: min-content;
   .modButtOne {
     border-radius: 50%;
     background-color: pink;
+    top:-1;
   }
   .modal-close {
     background-color: pink;
@@ -251,10 +290,13 @@ width: min-content;
   bottom: 7em;
   text-align: center;
   }
+  .modalNote {
+    height: 30em;
+  }
   .modalBird {
     box-shadow: 2px 2px 4px pink;
   }
-  #modal1 {
+  #birdModal {
     background-image: url('../../images/feathers.png');
   }
   #modal3 {
@@ -376,9 +418,7 @@ body {
     #aboutForm {
       width: 100%;
     }
-    #myImgDiv {
-      text-align: center;
-    }
+    
   }
   @media screen and (max-width: 558px) {
     body .options {
@@ -397,9 +437,6 @@ body {
       background-position-x: 14em;
     background-position-y: -1em;
     overflow: scroll;
-    }
-    #whoamiText {
-      z-index: 1;
     }
     #infoSubmit {
       top: 23em;

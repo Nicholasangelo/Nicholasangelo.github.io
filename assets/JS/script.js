@@ -81,6 +81,8 @@ $(".logoFloat").on("click", function () {
     } else if (data === "programs") {
         $("#programs").append(newLog);
         // smash.css('cursor', 'url(../../images/smash2.png)');
+    }else if (data === "others") {
+        $("#others").append(newLog);
     }
 
 })
