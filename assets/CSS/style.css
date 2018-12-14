@@ -177,6 +177,12 @@ animation-direction: alternate;
   .character-counter {
     display: none;
   }
+  #WMTS {
+    background: linear-gradient(ghostwhite, darkcyan, #ffffff);
+  }
+  #earlyWork{
+    background-color: #ffffff;
+  }
   /* xxENDxx ABOUT ME SECTION */
 
   /* ++START++ WHAT I KNOW SECTION */
@@ -354,7 +360,7 @@ width: 12em;
       /* ++START++ SOCIAL ICON SECTION */
 #icons {
   position: relative;
-  left: 72%;
+  left: 64%;
   bottom: 8em;
 }
 .clickIcon:hover {
