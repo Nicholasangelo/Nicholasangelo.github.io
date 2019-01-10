@@ -56,6 +56,7 @@ $("#sketchbookDiv").on("click", function () {
     $("#sketchbookContainer").show();
 })
 
+
 // ++START++ WHAT I KNOW STUFF
 var smash = $("#whatiknowContainer");
 smash.mousedown(function () {
