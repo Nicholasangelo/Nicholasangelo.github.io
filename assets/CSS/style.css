@@ -419,11 +419,6 @@ body {
   padding-top: 6%;
   overflow: scroll;
 }
-#custom{
-  bottom: -4em;
-    right: 12em;
-    
-}
 }
 @media screen and (max-width: 700px) {
 
@@ -453,10 +448,6 @@ body {
     left: 26%;
     top: 52em;
     }
-    #custom {
-      bottom: -4em;
-    right: 12em;
-    }
     #aboutForm {
       width: 100%;
     }
@@ -471,11 +462,11 @@ body {
     }
     #icons {
       position: absolute;
-      left: -3%;
-      top: 62em;
+      left: 7%;
+      top: 51em;
     }
     body {
-      padding-top: 0em;
+      padding-top: 5em;
       background-position-x: 14em;
     background-position-y: -1em;
     overflow: scroll;
@@ -490,25 +481,7 @@ body {
   }
 
   @media screen and (max-width: 478px) {
-    body .options {
-      min-width: 280px;
-    }
-    #icons {
-      position: absolute;
-      left: -3%;
-      top: 54em;
-    }
-    body {
-      padding-left: 2em;
-      overflow: scroll;
-    }
-    #aboutForm {
-      width: 125%;
-    }
-    #custom {
-      bottom: -4em;
-    right: 12em;
-    }
+    
   }
   #whoamiDiv {
     font-family: 'Federo', sans-serif;
