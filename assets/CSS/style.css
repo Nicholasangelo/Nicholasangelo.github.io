@@ -360,8 +360,16 @@ width: 12em;
       /* ++START++ SOCIAL ICON SECTION */
 #icons {
   position: relative;
-  left: 64%;
+  left: 72%;
   bottom: 8em;
+}
+.clickIcon{
+  height:50px;
+  width:50px;
+}
+.brutIcon{
+  height:50px; 
+  width:50px;
 }
 .clickIcon:hover {
   border-radius: 50%;
@@ -369,8 +377,8 @@ width: 12em;
   cursor: pointer;
 }
 #custom {
-  bottom: 2em;
-    position: relative;
+  height: 57px;
+    position: absolute;
     display: inline-block;
     font-family: 'Dawning of a New Day', cursive;
     color: #000;
@@ -395,7 +403,7 @@ width: 12em;
 /* ++ MEDIA ++ */
 @media screen and (max-width: 1120px) {
   #icons {
-  left: 56%;
+    left: 67%;
 }
 }
 @media screen and (max-width: 900px) {
@@ -414,11 +422,16 @@ body {
 #custom{
   bottom: -4em;
     right: 12em;
+    
 }
 }
 @media screen and (max-width: 700px) {
+
   body .options {
   min-width: 500px;
+}
+#whoamiContainer{
+  width: 80vw;
 }
 }
 @media screen and (max-width: 638px) {
@@ -431,6 +444,9 @@ body {
     body {
       padding-top: 0em;
       overflow: scroll;
+    }
+    #whoamiContainer{
+      width: 80vw;
     }
     #icons {
       position: absolute;
