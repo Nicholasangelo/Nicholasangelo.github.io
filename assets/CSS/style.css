@@ -89,7 +89,7 @@ body {
   /* ++START++ ABOUT ME SECTION */
   #whoamiContainer {
     width: min-content;
-    overflow: scroll;
+    overflow-y: scroll;
     border: double 9px;
     display: inline-block;
     font-family: 'Balthazar', serif;
@@ -417,7 +417,7 @@ width: 12em;
 }
 body {
   padding-top: 6%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 }
 @media screen and (max-width: 700px) {
@@ -438,7 +438,7 @@ body {
     }
     body {
       padding-top: 0em;
-      overflow: scroll;
+      overflow-y: scroll;
     }
     #whoamiContainer{
       width: 80vw;
@@ -455,7 +455,7 @@ body {
   }
   @media screen and (max-width: 558px) {
     body .options {
-      min-width: 360px;
+      min-width: 90vw;
     }
     body .options .option:nth-child(3) {
       display: none;
@@ -469,7 +469,7 @@ body {
       padding-top: 5em;
       background-position-x: 14em;
     background-position-y: -1em;
-    overflow: scroll;
+    overflow-y: scroll;
     }
     #infoSubmit {
       top: 23em;
@@ -481,7 +481,9 @@ body {
   }
 
   @media screen and (max-width: 478px) {
-    
+    #whoamiContainer{
+      width: 80vw;
+    }
   }
   #whoamiDiv {
     font-family: 'Federo', sans-serif;
