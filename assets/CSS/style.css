@@ -255,6 +255,7 @@ width: min-content;
   }
   .poster {
 width: 12em;
+box-shadow: -12px 10px 30px;
 /* position: relative; */
   }
   #takenotePoster {
@@ -290,15 +291,6 @@ width: 12em;
   .carImg {
     height: 200px;
     border-radius: 50%;
-  }
-  #poster1 {
-    box-shadow: -12px 10px 30px;
-  }
-  #poster2 {
-    box-shadow: -12px 11px 30px;
-  }
-  #poster3 {
-    box-shadow: -12px 12px 30px;
   }
   .modButtOne {
     border-radius: 50%;
