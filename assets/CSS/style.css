@@ -311,7 +311,7 @@ width: 12em;
     box-shadow: 2px 2px 6px;
   }
   #dinoModal {
-  padding-top:0;
+  padding-top: 20%;
   position: relative;
   bottom: 7em;
   text-align: center;
