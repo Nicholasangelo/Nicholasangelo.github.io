@@ -118,6 +118,10 @@ body {
   .infoCol::first-letter {
     font-size: 260%;
   }
+  .infoCol > span {
+    position: relative;
+    top: 76px;
+  }
   #infoCard {
     display: inline-block;
     text-align: center;
